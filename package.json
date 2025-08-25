@@ -1,7 +1,6 @@
 {
   "name": "clean-up-ptrarr-visualization",
   "version": "0.1.0",
-  "homepage": "https://ChrisChantszto.github.io/solutions",
   "private": true,
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.12",
