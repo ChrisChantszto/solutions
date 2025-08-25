@@ -43,7 +43,7 @@ const Problem3Explanation = () => {
 
   return (
     <div className="problem3-container">
-      <h2 className="problem3-title">Problem 3: Understanding Pointer Casting</h2>
+      <h2 className="problem3-title">Problem 3: Understanding Pointers Casting</h2>
       
       <div className="tip-box">
         <div className="tip-header">
