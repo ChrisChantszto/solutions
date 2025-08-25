@@ -1,0 +1,29 @@
+/* Container */
+.ms-container { padding: 1.5rem; max-width: 72rem; margin: 0 auto; background: #ffffff; }
+.ms-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; }
+
+/* Cards */
+.card { padding: 1rem; border-radius: 0.375rem; margin-bottom: 1rem; }
+.card-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+.card-blue { background: #eff6ff; }
+.card-green { background: #ecfdf5; }
+.card-yellow { background: #fffbeb; }
+.card-purple { background: #f5f3ff; }
+.card-gray { background: #f9fafb; border: 1px solid #e5e7eb; }
+.card-white { background: #ffffff; border: 1px solid #e5e7eb; }
+
+/* Helpers */
+.stack { display: grid; gap: 0.5rem; }
+.two-col { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+@media (min-width: 768px) { .two-col { grid-template-columns: 1fr 1fr; } }
+.list { display: grid; gap: 0.25rem; font-size: 0.95rem; }
+.muted { color: #4b5563; font-size: 0.95rem; }
+
+/* Code */
+.code-block { display: block; background: #e5e7eb; padding: 0.75rem; border-radius: 0.25rem; white-space: pre-wrap; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.small { font-size: 0.9rem; }
+
+/* Answer blocks */
+.answer-block { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 0.375rem; padding: 0.75rem; }
+.answer-label { font-weight: 700; margin-bottom: 0.25rem; }

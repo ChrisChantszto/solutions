@@ -1,0 +1,74 @@
+/* Container and headings */
+.p6-container { max-width: 1120px; margin: 0 auto; padding: 24px; background: #fff; }
+.p6-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 16px; }
+
+/* Part navigation */
+.part-nav { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+.part-btn { padding: 8px 14px; border-radius: 8px; background: #e5e7eb; border: 1px solid #d1d5db; cursor: pointer; }
+.part-btn:hover { background: #e2e8f0; }
+.part-btn.active-blue { background: #3b82f6; color: #fff; }
+.part-btn.active-green { background: #22c55e; color: #fff; }
+.part-btn.active-purple { background: #a855f7; color: #fff; }
+.part-btn.active-orange { background: #f97316; color: #fff; }
+
+/* Layout helpers */
+.inline-grid { display: grid; gap: 16px; }
+.big-gap { gap: 24px; }
+.two-col { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 900px) { .two-col { grid-template-columns: 1fr 1fr; } }
+.wrap { flex-wrap: wrap; }
+.flex-wrap { display: flex; flex-wrap: wrap; }
+
+/* Cards */
+.card { border: 1px solid #d1d5db; border-radius: 10px; padding: 16px; background: #f9fafb; }
+.card-white { background: #fff; }
+.card-gray { background: #f3f4f6; }
+.card-blue { background: #eff6ff; border-color: #93c5fd; }
+.card-green { background: #ecfdf5; border-color: #86efac; }
+.card-yellow { background: #fffbeb; border-color: #fde68a; }
+.card-purple { background: #f5f3ff; border-color: #c4b5fd; }
+.card-orange { background: #fff7ed; border-color: #fdba74; }
+.card-title { font-weight: 700; margin-bottom: 10px; }
+
+/* Text */
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.small { font-size: 0.9rem; }
+.xsmall { font-size: 0.8rem; }
+.caption { font-size: 0.8rem; color: #4b5563; margin-top: 8px; }
+.block { margin-bottom: 8px; }
+.stack { display: grid; gap: 6px; }
+.stack.small { gap: 4px; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 8px; border: 1px solid transparent; cursor: pointer; }
+.btn:disabled { background: #d1d5db; color: #6b7280; cursor: not-allowed; }
+.btn-orange { background: #f97316; color: #fff; }
+.btn-orange:hover { background: #ea580c; }
+.btn-gray { background: #6b7280; color: #fff; }
+.btn-gray:hover { background: #4b5563; }
+.controls { display: flex; gap: 16px; align-items: center; }
+
+/* Memory boxes */
+.mem-box { width: 64px; height: 64px; border: 2px solid #d1d5db; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 4px; background: #fff; transition: border-color 0.2s, background 0.2s; border-radius: 6px; }
+.mem-box.highlighted { border-color: #3b82f6; background: #dbeafe; }
+.mem-addr { font-size: 0.7rem; color: #6b7280; }
+.mem-val { font-size: 0.9rem; font-weight: 700; }
+.mem-label { font-size: 0.75rem; color: #2563eb; }
+.w16 { width: 64px; }
+.w20 { width: 80px; }
+
+/* Code and tables */
+.code-block { background: #fff; border: 1px solid #e5e7eb; border-radius: 6px; padding: 10px; overflow-x: auto; }
+.table-wrap { width: 100%; overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.table th, .table td { border: 1px solid #d1d5db; padding: 8px; text-align: left; }
+.table thead tr { background: #f3f4f6; }
+
+/* Lists */
+.list { display: grid; gap: 4px; padding-left: 16px; }
+
+/* Indentation and accents */
+.indent { margin-left: 16px; }
+.indent2 { margin-left: 32px; }
+.accent-blue { color: #2563eb; }
+.accent-green { color: #16a34a; }

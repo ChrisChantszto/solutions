@@ -1,15 +1,24 @@
 {
   "name": "clean-up-ptrarr-visualization",
   "version": "0.1.0",
+  "homepage": "https://ChrisChantszto.github.io/solutions",
   "private": true,
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.12",
+    "autoprefixer": "^10.4.21",
+    "lucide-react": "^0.541.0",
+    "postcss": "^8.5.6",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "tailwindcss": "^4.1.12",
+    "web-vitals": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -r https://github.com/ChrisChantszto/solutions.git",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -1,0 +1,251 @@
+/* Main container */
+.visualization-container {
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* Title and headers */
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.function-signature {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 0.25rem;
+}
+
+.function-signature h3 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.code-block {
+  background-color: #e5e7eb;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  display: block;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.next-button, .reset-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: none;
+}
+
+.next-button {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.next-button:disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+.reset-button {
+  background-color: #6b7280;
+  color: white;
+}
+
+/* Step description */
+.step-description {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background-color: #dbeafe;
+  border-radius: 0.25rem;
+}
+
+/* Grid layout */
+.visualization-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .visualization-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.column-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Memory sections */
+.memory-section {
+  border: 2px solid #9ca3af;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+}
+
+.memory-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.memory-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.memory-row {
+  display: flex;
+}
+
+.memory-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.address-label {
+  font-size: 0.75rem;
+}
+
+.freed-label {
+  color: #ef4444;
+  font-size: 0.875rem;
+}
+
+/* Memory blocks */
+.memory-block {
+  border: 2px solid #d1d5db;
+  padding: 0.5rem;
+  margin: 0.25rem;
+  text-align: center;
+  min-width: 3rem;
+  transition: all 0.5s;
+}
+
+.memory-block.highlighted {
+  border: 2px dashed #ef4444;
+}
+
+.blue-block {
+  background-color: #dbeafe;
+}
+
+.yellow-block {
+  background-color: #fef3c7;
+}
+
+.green-block {
+  background-color: #d1fae5;
+}
+
+.red-block {
+  background-color: #fee2e2;
+}
+
+.address {
+  font-size: 0.75rem;
+  color: #4b5563;
+}
+
+.value {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: #2563eb;
+}
+
+/* Green border sections */
+.green-border {
+  border: 2px solid #059669;
+}
+
+.green-title {
+  color: #047857;
+}
+
+/* Success message */
+.success-message {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #ecfdf5;
+  border-radius: 0.25rem;
+}
+
+.success-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #047857;
+}
+
+.success-description {
+  font-size: 0.75rem;
+  color: #059669;
+}
+
+/* Code walkthrough */
+.code-walkthrough {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.25rem;
+}
+
+.walkthrough-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.code-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-family: monospace;
+}
+
+.code-step.active {
+  color: #059669;
+}
+
+.code-step.inactive {
+  color: #9ca3af;
+}
+
+/* Memory group */
+.memory-group {
+  margin-top: 1rem;
+}

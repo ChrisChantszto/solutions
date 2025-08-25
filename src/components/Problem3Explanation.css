@@ -1,0 +1,214 @@
+/* Container and headings */
+.problem3-container {
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.problem3-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Tip / highlighted code area */
+.tip-box {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #fffbeb; /* yellow-50 */
+  border: 1px solid #fef3c7; /* yellow-200 */
+  border-radius: 0.25rem;
+}
+
+.tip-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #92400e; /* yellow-700-ish */
+}
+
+.code-block-lg {
+  display: block;
+  background-color: #fef3c7; /* yellow-100 */
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Step navigation */
+.step-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.step-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #e5e7eb; /* gray-200 */
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.step-btn.active {
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+}
+
+/* Current step */
+.current-step {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #dbeafe; /* blue-50 */
+  border-radius: 0.25rem;
+}
+
+.current-step h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Grid: reuse same pattern as other component */
+.visualization-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .visualization-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Memory section: reuse class names for style consistency */
+.memory-section {
+  border: 2px solid #9ca3af;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.memory-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* MemoryBox styling (align with existing) */
+.memory-box,
+.memory-block {
+  border: 2px solid #d1d5db;
+  height: 4rem; /* 64px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.25rem;
+  transition: all 0.5s;
+}
+
+.memory-block.highlighted {
+  border: 2px dashed #ef4444;
+  background-color: #fee2e2;
+}
+
+.address {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.value {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: #2563eb;
+}
+
+/* width helpers to replace Tailwind */
+.w-10 { min-width: 2.5rem; }
+.w-12 { min-width: 3rem; }
+.w-20 { min-width: 5rem; }
+
+/* Right side info cards */
+.info-card {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  background-color: #f9fafb;
+}
+
+.info-card.active {
+  background-color: #ecfdf5; /* green-50 */
+  border-color: #a7f3d0; /* green-200 */
+}
+
+/* Comparison section */
+.comparison {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 0.25rem;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .comparison-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.comparison-card {
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.comparison-card.green {
+  background-color: #dcfce7;
+}
+
+.comparison-card.blue {
+  background-color: #dbeafe;
+}
+
+/* Key insights */
+.key-insights {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f3e8ff; /* purple-50 */
+  border-radius: 0.25rem;
+}
+
+.key-insights h4 {
+  font-weight: bold;
+  color: #6b21a8; /* purple-800 */
+  margin-bottom: 0.5rem;
+}
+
+.key-insights ul {
+  margin: 0.25rem 0 0 0;
+  padding-left: 1rem;
+}

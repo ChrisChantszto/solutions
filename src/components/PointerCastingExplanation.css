@@ -1,0 +1,76 @@
+/* Container and heading */
+.pce-container { max-width: 1040px; margin: 0 auto; padding: 24px; background: #fff; }
+.pce-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 16px; }
+
+/* Tabs */
+.pce-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.pce-tab { padding: 8px 12px; border: 1px solid #d1d5db; border-radius: 8px; background: #e5e7eb; cursor: pointer; font-size: 0.9rem; }
+.pce-tab:hover { background: #e2e8f0; }
+.pce-tab.active { background: #3b82f6; color: #fff; border-color: #3b82f6; }
+
+/* Info blocks and cards */
+.pce-info { padding: 16px; border-radius: 10px; border: 1px solid #d1d5db; background: #f9fafb; }
+.pce-card { padding: 16px; border-radius: 10px; border: 1px solid #d1d5db; background: #f9fafb; }
+.pce-card-title { font-weight: 700; margin-bottom: 10px; }
+
+/* color variants */
+.pce-blue { background: #eff6ff; border-color: #93c5fd; }
+.pce-yellow { background: #fffbeb; border-color: #fde68a; }
+.pce-green { background: #ecfdf5; border-color: #86efac; }
+.pce-purple { background: #f5f3ff; border-color: #c4b5fd; }
+.pce-orange { background: #fff7ed; border-color: #fdba74; }
+.pce-gray { background: #f3f4f6; border-color: #d1d5db; }
+.card-red { background: #fef2f2; border-color: #fca5a5; }
+.card-green { background: #ecfdf5; border-color: #86efac; }
+.card-gray { background: #f3f4f6; border-color: #d1d5db; }
+.pce-red-border { border-color: #f87171; }
+.pce-green-border { border-color: #22c55e; }
+
+/* Typography helpers */
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.bold { font-weight: 700; }
+.small { font-size: 0.92rem; }
+.xsmall, .xs { font-size: 0.8rem; }
+.muted { color: #6b7280; }
+.red600 { color: #dc2626; }
+.blue600 { color: #2563eb; }
+.green600 { color: #16a34a; }
+.purple900 { color: #581c87; }
+.green900 { color: #064e3b; }
+.red900 { color: #7f1d1d; }
+.mb1 { margin-bottom: 6px; }
+.mb2 { margin-bottom: 10px; }
+.mt1 { margin-top: 6px; }
+.mt2 { margin-top: 12px; }
+.center { text-align: center; }
+
+/* Layout helpers */
+.grid { display: grid; }
+.gap16 { gap: 16px; }
+.gap24 { gap: 24px; }
+.two-col { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 900px) { .two-col { grid-template-columns: 1fr 1fr; } }
+.stack { display: grid; gap: 8px; }
+.list { display: grid; gap: 4px; padding-left: 16px; }
+
+/* Code */
+.pce-code { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px; overflow-x: auto; white-space: pre-wrap; }
+
+/* Pointers diagram */
+.pce-pointer { display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 8px; border: 1px solid #d1d5db; background: #fff; }
+.pce-pointer.hl { background: #dbeafe; border-color: #60a5fa; }
+.pce-pointer-side { display: grid; }
+.pce-pointer-arrow { color: #2563eb; }
+
+/* Memory boxes */
+.pce-mem { width: 80px; height: 64px; border: 2px solid #d1d5db; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 4px; background: #fff; transition: background 0.2s, border-color 0.2s; }
+.pce-mem.hl { background: #dbeafe; border-color: #60a5fa; }
+.pce-mem-addr { font-size: 0.7rem; color: #6b7280; }
+.pce-mem-val { font-size: 0.95rem; font-weight: 700; }
+.pce-mem-label { font-size: 0.75rem; color: #2563eb; }
+
+/* Arrows */
+.arrow-down { color: #2563eb; }
+
+/* Mini cards */
+.pce-mini-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 12px; }
